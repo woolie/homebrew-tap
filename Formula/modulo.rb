@@ -1,10 +1,10 @@
 class Modulo < Formula
   desc "source-only dependency manager"
   homepage "https://github.com/modulo-dm/modulo"
-  url "https://github.com/modulo-dm/modulo/archive/v0.5.2.tar.gz"
-  sha256 "a2499784bc43cdb83e2f5b27c72169540df0bf57d86005c7aaeb2cede9b203eb"
+  url "https://github.com/modulo-dm/modulo/archive/v0.6.0.tar.gz"
+  sha256 "15159dd80a84edc831c6a2a3111d3910561a90b9425797e05a0403678ca5137e"
 
-  depends_on :xcode => "8.0"
+  depends_on :xcode => "8.3.3"
 
   def install
     xcodebuild "build", "-project", "modulo.xcodeproj", "-scheme", "modulo", "-configuration", "Release", "SYMROOT=build"
